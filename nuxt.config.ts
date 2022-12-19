@@ -20,5 +20,14 @@ export default defineNuxtConfig({
   vueTransitions: {
     // The same options as in the plugin itself.
     // You will get an autocomplete using Nuxt 3.
+  },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "@/assets/scss/_colors.scss" as *;'
+        }
+      }
+    }
   }
 });
