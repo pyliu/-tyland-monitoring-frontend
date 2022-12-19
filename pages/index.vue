@@ -1,26 +1,40 @@
 <script setup>
-import { computed } from "@vue/reactivity";
 import { onBeforeMount, onBeforeUpdate, onMounted, onUnmounted, onUpdated } from "vue";
 
-const  props = defineProps({
+const props = defineProps({
   idx: { type: Number, default: 99 }
 })
 
 const emit = defineEmits([])
 
-// const appConfig = useAppConfig()
-// const runtimeConfig = useRuntimeConfig()
+const appConfig = useAppConfig()
+const config = useRuntimeConfig()
 
-const data = computed(() => {
-  return {
-    name: 'pyliu',
-    age: 45
+console.log(config)
+const url = `http://localhost:${config.apiPort}/cpu`
+const token = config.apiSecret
+const getCPU = async () => {
+  try {
+    return await $fetch(url, {
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    })
+  } catch (e) {
+    console.error(e)
   }
-})
+}
+const data = await getCPU()
+// const data = computed(() => {
+//   return {
+//     name: 'pyliu',
+//     age: 28
+//   }
+// })
 
 onBeforeMount(()=> {})
-onMounted(()=> {
-  console.log('mounted!!', data)
+onMounted(async () => {
+  console.log(data)
 })
 onBeforeUpdate(()=> {})
 onUpdated(()=> {})
@@ -30,6 +44,7 @@ onUnmounted(()=> {})
 <template lang="pug">
 nuxt-welcome
 nuxt-link(to="/test") test
+ContentDoc
 </template>
 
 <style lang="scss" scoped>
