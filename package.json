@@ -21,6 +21,7 @@
     "@volar/vue-language-plugin-pug": "^1.0.14",
     "nuxt": "3.0.0",
     "nuxt-headlessui": "^1.0.4",
+    "prettier-plugin-tailwindcss": "^0.2.1",
     "pug": "^3.0.2",
     "pug-plain-loader": "^1.1.0"
   }

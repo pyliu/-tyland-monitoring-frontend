@@ -1,4 +1,7 @@
 <script setup>
+definePageMeta({
+  // layout: 'custom'
+})
 const props = defineProps({
   idx: { type: Number, default: 99 }
 })
@@ -23,7 +26,7 @@ console.log(config)
 //   }
 // }
 // await useAsyncData('/api/v1/cpu', () => $fetch(`http://localhost:${config.apiPort}/api/v1/cpu`))
-const data = await useAsyncData('/api/v1/cpu', () => $fetch(`http://localhost:${config.apiPort}/api/v1/cpu`))
+// const { data, refresh, pending } = await useAsyncData('/api/v1/cpu', () => $fetch(`http://localhost:${config.apiPort}/api/v1/cpu`))
 // const data = computed(() => {
 //   return {
 //     name: 'pyliu',
@@ -32,9 +35,7 @@ const data = await useAsyncData('/api/v1/cpu', () => $fetch(`http://localhost:${
 // })
 
 onBeforeMount(()=> {})
-onMounted(async () => {
-  console.log(data)
-})
+onMounted(async () => {})
 onBeforeUpdate(()=> {})
 onUpdated(()=> {})
 onUnmounted(()=> {})

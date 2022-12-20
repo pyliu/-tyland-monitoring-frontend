@@ -1,17 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-    "nuxt-icons",
-    "nuxt-headlessui",
-    "@nuxt/content",
-    "@nuxt/image-edge",
-    "@nuxtjs/color-mode",
-    "@morev/vue-transitions/nuxt",
-    "@nuxtjs/tailwindcss",
+    'nuxt-icons',
+    'nuxt-headlessui',
+    '@nuxt/content',
+    '@nuxt/image-edge',
+    '@nuxtjs/color-mode',
+    '@morev/vue-transitions/nuxt',
+    '@nuxtjs/tailwindcss',
   ],
   // Optionally change the default prefix.
   headlessui: {
-    prefix: "Headless",
+    prefix: 'Headless',
   },
   content: {
     // https://content.nuxtjs.org/api/configuration
@@ -25,10 +25,10 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "@/assets/scss/_colors.scss" as *;'
-        }
-      }
-    }
+          additionalData: '@use "@/assets/scss/_colors.scss" as *;',
+        },
+      },
+    },
   },
   runtimeConfig: {
     // The private keys which are only available server-side
@@ -36,7 +36,7 @@ export default defineNuxtConfig({
     apiPort: '65535',
     // Keys within public are also exposed client-side
     public: {
-      apiBase: '/api'
-    }
-  }
-});
+      apiBase: '/api',
+    },
+  },
+})
