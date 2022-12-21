@@ -10,7 +10,7 @@ function toggleDark() {
 
 <template lang="pug">
 .fixed-bottom
-  .mr-1 地所服務監控
+  .mr-1 服務監控系統
   i.mr-1 v0.0.1
   button(@click='toggleDark' :class="modeCss")
 </template>
