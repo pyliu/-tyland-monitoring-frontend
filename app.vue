@@ -1,5 +1,29 @@
-<template lang="pug">
-.m-4.bg-white
-  p.pb-4.text-2xl.text-slate-600 這裡是最外層 app.vue
-  NuxtLayout: NuxtPage
+<script setup>
+useHead({
+  title: 'Vitesse Nuxt 3',
+  link: [
+    {
+      rel: 'icon', type: 'image/png', href: '/nuxt.png',
+    },
+  ],
+})
+</script>
+
+<template>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
+
+<style>
+html, body , #__nuxt{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+html.dark {
+  background: #222;
+  color: white;
+}
+</style>

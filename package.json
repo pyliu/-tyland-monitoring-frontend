@@ -1,28 +1,25 @@
 {
   "private": true,
+  "packageManager": "pnpm@7.9.0",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "dependencies": {
-    "@morev/vue-transitions": "^2.3.4",
-    "@nuxtjs/color-mode": "^3.2.0",
-    "nuxt-icons": "^3.0.0"
+    "build": "nuxi build",
+    "dev": "nuxi dev",
+    "start": "node .output/server/index.mjs",
+    "lint": "eslint .",
+    "postinstall": "nuxi prepare",
+    "generate": "nuxi generate"
   },
   "devDependencies": {
-    "@nuxt/content": "^2.2.2",
-    "@nuxt/image-edge": "^1.0.0-27840416.dc1ed65",
-    "@nuxtjs/tailwindcss": "^6.1.3",
-    "@sidebase/nuxt-auth": "^0.3.0",
-    "@volar-plugins/vetur": "^0.1.0",
-    "@volar/vue-language-plugin-pug": "^1.0.14",
-    "nuxt": "3.0.0",
-    "nuxt-headlessui": "^1.0.4",
-    "prettier-plugin-tailwindcss": "^0.2.1",
-    "pug": "^3.0.2",
-    "pug-plain-loader": "^1.1.0"
+    "@antfu/eslint-config": "^0.30.1",
+    "@iconify-json/carbon": "^1.1.10",
+    "@iconify-json/twemoji": "^1.1.5",
+    "@nuxtjs/color-mode": "^3.2.0",
+    "@pinia/nuxt": "^0.4.3",
+    "@unocss/nuxt": "^0.46.5",
+    "@vueuse/nuxt": "^9.5.0",
+    "eslint": "^8.27.0",
+    "nuxt": "^3.0.0",
+    "pinia": "^2.0.23",
+    "typescript": "^4.9.3"
   }
 }
