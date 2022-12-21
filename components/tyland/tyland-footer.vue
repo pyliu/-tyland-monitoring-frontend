@@ -1,7 +1,18 @@
+<script setup lang="ts">
+const colorMode = useColorMode()
+const modeCss = computed(() => {
+  return colorMode.value === 'dark' ? 'i-carbon-moon' : 'i-carbon-sun'
+})
+function toggleDark() {
+  colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
+}
+</script>
+
 <template lang="pug">
 .fixed-bottom
   .mr-1 地所服務監控
-  i v0.0.1
+  i.mr-1 v0.0.1
+  button(@click='toggleDark' :class="modeCss")
 </template>
 
 <style scoped>

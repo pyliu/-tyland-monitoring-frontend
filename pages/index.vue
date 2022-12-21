@@ -6,7 +6,7 @@ onMounted(() => {
 </script>
 
 <template lang="pug">
-Icon.mx-auto(name="logos:nuxt" size="360")
+//- Icon.mx-auto(name="logos:nuxt" size="360")
 div
   Logos(mb-6)
   Suspense: PageView: template(#fallback)
