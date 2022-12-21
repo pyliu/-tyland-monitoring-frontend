@@ -1,6 +1,6 @@
 <script setup>
 useHead({
-  title: 'Vitesse Nuxt 3',
+  title: '系統監控儀表板-桃園地政',
   link: [
     {
       rel: 'icon', type: 'image/png', href: '/nuxt.png',
@@ -9,10 +9,8 @@ useHead({
 })
 </script>
 
-<template>
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
+<template lang="pug">
+nuxt-layout: nuxt-page
 </template>
 
 <style>
