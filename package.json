@@ -19,6 +19,7 @@
     "@vueuse/nuxt": "^9.5.0",
     "eslint": "^8.27.0",
     "nuxt": "^3.0.0",
+    "nuxt-icon": "^0.1.8",
     "pinia": "^2.0.23",
     "typescript": "^4.9.3",
     "vite-plugin-pug": "^0.3.2"

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const router = useRouter()
+// const router = useRouter()
 </script>
 
 <template>
@@ -9,7 +9,7 @@ const router = useRouter()
     </div>
     <div>找不到頁面</div>
     <div>
-      <button btn text-sm m="3 t8" @click="router.back()">
+      <button btn text-sm m="3 t8" @click="$router.back()">
         返回
       </button>
     </div>
