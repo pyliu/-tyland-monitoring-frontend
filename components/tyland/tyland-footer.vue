@@ -1,31 +1,27 @@
-<script setup lang="ts">
+<script setup>
 const colorMode = useColorMode()
 const modeCss = computed(() => {
   return colorMode.value === 'dark' ? 'i-carbon-moon' : 'i-carbon-sun'
 })
-function toggleDark() {
+const toggleDark = () => {
   colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
 }
 </script>
 
-<template lang="pug">
-.fixed-bottom
-  .mr-1 服務監控系統
-  i.mr-1 v0.0.1
-  button(@click='toggleDark' :class="modeCss")
+<template>
+  <div absolute bottom-5 right-0 flex items-center op30 fw300>
+    <a
+      i-carbon-logo-github
+      text-inherit
+      href="https://github.com/pyliu/tyland-monitoring-frontend"
+      target="_blank"
+      mr-1
+    />
+    <span mr-1>服務監控系統</span>
+    <span mr-1>v0.0.1</span>
+    <button my-auto :class="modeCss" @click="toggleDark" />
+  </div>
 </template>
 
 <style scoped>
-.fixed-bottom {
-  display: flex;
-  color: gray;
-  font-size: small;
-  font-weight: 600;
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-}
-.mr-1 {
-  margin-right: 0.25rem;
-}
 </style>

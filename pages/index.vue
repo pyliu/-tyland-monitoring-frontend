@@ -7,8 +7,9 @@ onMounted(() => {
 
 <template lang="pug">
 //- Icon.mx-auto(name="logos:nuxt" size="360")
-div
-  Logos(mb-6)
-  Suspense: PageView: template(#fallback)
-  InputEntry
+tyland-server-dashboard(ip="220.1.34.211")
+//- div
+//-   Logos(mb-6)
+//-   PageView: template(#fallback)
+//-   InputEntry
 </template>

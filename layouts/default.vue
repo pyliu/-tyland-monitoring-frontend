@@ -1,5 +1,4 @@
 <template lang="pug">
-main.py-20.px-10.text-center
-  slot
-  tyland-footer
+main: slot
+tyland-footer
 </template>
