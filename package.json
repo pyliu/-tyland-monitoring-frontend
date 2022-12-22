@@ -7,7 +7,8 @@
     "start": "node .output/server/index.mjs",
     "lint": "eslint .",
     "postinstall": "nuxi prepare",
-    "generate": "nuxi generate"
+    "generate": "nuxi generate",
+    "clean": "nuxi cleanup"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.30.1",

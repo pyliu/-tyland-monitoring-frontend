@@ -9,7 +9,7 @@ const toggleDark = () => {
 </script>
 
 <template>
-  <div absolute bottom-5 right-0 flex items-center op30 fw300>
+  <div absolute bottom-10px right-10px flex items-center op30 fw300 text-xs>
     <a
       i-carbon-logo-github
       text-inherit
