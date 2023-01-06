@@ -15,7 +15,7 @@ const props = defineProps(['ip'])
 <template>
   <div h-full text-center flex items-center select-none all:transition-400 class="border-rounded">
     測試 {{ props.ip }}
-    <button py-2 px-4 font-semibold rounded-lg shadow-md border-3>
+    <button py-2 px-4 ml-2 font-semibold rounded-lg shadow-md border-3>
       AAA
     </button>
   </div>
