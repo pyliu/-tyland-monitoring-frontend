@@ -1,6 +1,6 @@
 <script setup>
 useHead({
-  title: '服務監控系統-桃園地政',
+  title: '伺服器監控系統-桃園地政',
   link: [
     {
       rel: 'icon', type: 'image/png', href: '/nuxt.png',

@@ -1,5 +1,5 @@
 <template lang="pug">
 tyland-header 
-main: slot
+main(class="px-8"): slot
 tyland-footer
 </template>
